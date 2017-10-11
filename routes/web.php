@@ -19,8 +19,6 @@
 //     return 'This is user '.$name. ' with an Id of '.$id;
 //  });
 
-Route::get('/', 'PagesController@Index'); 
-
-Route::get('/about', function () {
-   return view('pages.about');
-});
+Route::get('/', 'PagesController@index'); 
+Route::get('/about', 'PagesController@about');
+Route::get('/services', 'PagesController@services'); 
